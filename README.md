@@ -63,7 +63,7 @@ Neste cenário, o usuário logado não consta na tabela da transação ZF1GPM019
     Processamento: A BAdI identifica a mudança de fase e verifica a ausência do usuário na tabela ZZF1VPM_USR_ENCE.
 
     Resultado: O SAP bloqueia a gravação e exibe uma mensagem de erro na barra de status.
-    ![Erro de Autorização](IMG/FALSO_ENCE.png)
+    (IMG/FALSO_ENCE.png)
 
 🟢 Cenário 02: Sucesso (Usuário Autorizado)
 
