@@ -13,6 +13,7 @@ Componentes Técnicos
     BAdI: WORKORDER_UPDATE.
 
     Método: BEFORE_UPDATE.
+![BADI](IMG/IMG_BADI.png)
 
 🚀 Funcionalidades
 
@@ -77,5 +78,7 @@ Neste cenário, o usuário está cadastrado corretamente na tabela de controle.
     Ação: O usuário autorizado realiza o mesmo procedimento de anulação na transação IW32.
 
     Resultado: O sistema valida a permissão e permite a gravação da ordem, confirmando a alteração com sucesso.
+![Sucesso na Gravação](IMG/TRANSAÇÃO_VAZIA.png)
+![Sucesso na Gravação](IMG/TRANSAÇÃO_PREENCHIDA.png)
 ![Sucesso na Gravação](IMG/CENARIO_ANULADO_ENCE.png)
-    
+![Sucesso na Gravação](IMG/SOMENTE_ENTE.png)
