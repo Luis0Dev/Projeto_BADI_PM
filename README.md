@@ -51,10 +51,28 @@ ENDIF.
         Insira o código de validação no método BEFORE_UPDATE.
 
     Ativação: Ative a implementação da BAdI.
-📸 Capturas de Tela
+🧪 Fluxos de Teste (Sucesso vs. Sem Sucesso)
 
-    Tabela de Usuários: Exibe os usuários cadastrados com permissão.
+Este projeto foi validado através de testes funcionais para garantir que a trava de segurança atue apenas quando necessário.
+🔴 Cenário 01: Sem Sucesso (Usuário Não Autorizado)
 
-    Fluxo na IW32: O menu de funções onde a anulação é disparada.
+Neste cenário, o usuário logado não consta na tabela da transação ZF1GPM019.
 
-    Bloqueio de Sistema: Exemplo da mensagem de erro disparada para usuários não autorizados.
+    Ação: O usuário tenta anular o encerramento comercial de uma ordem com status ENCE.
+
+    Processamento: A BAdI identifica a mudança de fase e verifica a ausência do usuário na tabela ZZF1VPM_USR_ENCE.
+
+    Resultado: O SAP bloqueia a gravação e exibe uma mensagem de erro na barra de status.
+    ![Erro de Autorização](IMG/FALSO_ENCE.png)
+
+🟢 Cenário 02: Sucesso (Usuário Autorizado)
+
+Neste cenário, o usuário está cadastrado corretamente na tabela de controle.
+
+    Configuração: O administrador adiciona o usuário na transação ZF1GPM019.
+
+    Ação: O usuário autorizado realiza o mesmo procedimento de anulação na transação IW32.
+
+    Resultado: O sistema valida a permissão e permite a gravação da ordem, confirmando a alteração com sucesso.
+    ![Sucesso na Gravação](IMG/CENARIO_ANULADO_ENCE.png)
+    
