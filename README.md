@@ -51,3 +51,10 @@ ENDIF.
         Insira o código de validação no método BEFORE_UPDATE.
 
     Ativação: Ative a implementação da BAdI.
+📸 Capturas de Tela
+
+    Tabela de Usuários: Exibe os usuários cadastrados com permissão.
+
+    Fluxo na IW32: O menu de funções onde a anulação é disparada.
+
+    Bloqueio de Sistema: Exemplo da mensagem de erro disparada para usuários não autorizados.
