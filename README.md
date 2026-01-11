@@ -63,6 +63,9 @@ Neste cenário, o usuário logado não consta na tabela da transação ZF1GPM019
     Processamento: A BAdI identifica a mudança de fase e verifica a ausência do usuário na tabela ZZF1VPM_USR_ENCE.
 
     Resultado: O SAP bloqueia a gravação e exibe uma mensagem de erro na barra de status.
+![Erro](IMG/CENARIO_ORDEM.png)
+![Erro](IMG/CENARIO_ORDEM_PRIME.png)
+![Erro](IMG/CENARIO_ENCE_FALSO.png)
 ![Erro](IMG/FALSO_ENCE.png)
 
 🟢 Cenário 02: Sucesso (Usuário Autorizado)
@@ -74,5 +77,5 @@ Neste cenário, o usuário está cadastrado corretamente na tabela de controle.
     Ação: O usuário autorizado realiza o mesmo procedimento de anulação na transação IW32.
 
     Resultado: O sistema valida a permissão e permite a gravação da ordem, confirmando a alteração com sucesso.
-    ![Sucesso na Gravação](IMG/CENARIO_ANULADO_ENCE.png)
+![Sucesso na Gravação](IMG/CENARIO_ANULADO_ENCE.png)
     
