@@ -8,7 +8,7 @@ Componentes Técnicos
 
     Transação de Manutenção: ZF1GPM019.
 
-    Tabela de Permissões: ZZF1VPM_USR_ENCE.
+    Tabela de Permissões: ZF1VPM_USR_ENCE.
 
     BAdI: WORKORDER_UPDATE.
 
