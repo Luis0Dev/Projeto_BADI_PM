@@ -3,7 +3,7 @@ SAP PM: Controle de Permissão para Anular ENCE
 Este projeto provê uma solução customizada para o módulo de SAP PM (Plant Maintenance), restringindo a anulação do Encerramento Comercial (ENCE) de ordens de manutenção apenas a usuários autorizados via tabela Z.
 📋 Descrição do Cenário
 
-Por padrão, a transação IW32 permite que usuários com acesso de modificação anulem o encerramento comercial das ordens. Esta implementação adiciona uma camada de governança, validando se o usuário logado possui permissão em uma tabela mestre customizada antes de permitir a gravação da anulação.
+Por padrão, a transação IW32 permite que usuários com acesso de modificação não condigsm anular o encerramento comercial das ordens. Esta implementação adiciona uma camada de governança, validando se o usuário logado possui permissão em uma tabela mestre customizada antes de permitir a gravação da anulação.
 Componentes Técnicos
 
     Transação de Manutenção: ZF1GPM019.
